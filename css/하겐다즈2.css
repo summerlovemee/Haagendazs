@@ -1,0 +1,435 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding-left: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #333;
+}
+.video {
+    height: 1080px;   
+   
+}
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+     position: relative;
+}
+
+.wrap .header .logo a img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 10px;
+}
+
+.wrap .header .search a img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.wrap .header .menu a img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+.wrap .header .text {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+.wrap .header .text li a {
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    line-height: 3;
+}
+.wrap .header .more {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+.wrap .header .more a {
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+}
+.wrap .main04 {
+    width: 1920px;
+
+}
+.wrap .main04 div ul{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    margin-top: 200px;
+}
+.wrap .main04 ul li:nth-child(1) {
+ margin: 50px 100px;
+}
+.wrap .main04 ul li h1 {
+    font-size: 48px;
+    font-family:'KBO-Dia-Gothic_bold';
+    font-weight: bold;
+    color: #6A1731;
+    margin-bottom: 77px;
+}
+.wrap .main04 ul li p {
+    font-size: 23px;
+    font-family:'Pretendard-Regular';
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 77px;
+    line-height: 1.5;
+}
+.wrap .main04 ul li a {
+    font-size: 20px;
+    font-family:'Pretendard-Regular';
+    font-weight: bold;
+    color: #fff;
+    background-color: #6A1731;
+    border-radius: 70px;
+    padding: 13px 66px;
+}
+.wrap .main04 ul li img {
+    width: 400px;
+    height: 554px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.wrap .main04 ul li:nth-of-type(1) {
+    order: 3;
+}
+.wrap .main04 ul li:nth-of-type(2) {
+    order: 2;
+}
+.wrap .main04 ul li:nth-of-type(3) {
+    order: 4;
+}
+.wrap .main04 ul li:nth-of-type(4) {
+    order: 3;
+}
+
+.wrap .main01 p {
+    margin-top: 250px;
+    color: #6A1731;
+    font-size: 48px;
+    font-family: 'KBO-Dia-Gothic_bold';
+    text-align: center;
+}
+.wrap .main01 .contents {
+    width: 1484px;
+    margin: 90px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .main01 .contents a img{
+    width: 350px;
+    height: 465px;
+    object-fit: cover;
+    border-radius: 30px;
+   margin-top: 50px;
+}
+
+.wrap .main01 .contents .item01:nth-child(1) {
+    transform: rotate(-10deg);
+}
+.wrap .main01 .contents .item01:nth-child(2) {
+    transform: rotate(10deg);
+}
+.wrap .main01 .contents .item01:nth-child(4) {
+    transform: rotate(-10deg);
+}
+.wrap .main01 .contents .item01:nth-child(5) {
+    transform: rotate(10deg);
+}
+
+.wrap .main02 {
+    width: 1920px;
+
+}
+.wrap .main02  {
+    width: 100%;
+    height: 220px;
+    background-color: #6A1731;
+    margin-top: 150px;
+}
+.wrap .main02 .delivery img {
+width: 500px;
+height: 220px;
+object-fit: cover;
+margin-left: 700px;
+}
+
+.wrap .main03 p {
+    margin-top: 150px;
+    font-size: 48px;
+    color: #6A1731;
+    font-size: 48px;
+    font-family: 'KBO-Dia-Gothic_bold';
+    text-align: center;
+}
+.wrap .main03 .category {
+    width: 1484px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .main03 .category .list {
+width: 1150px;
+}
+.wrap .main03 .category .list .item {
+    width: 350px;
+margin-right: 28px;
+}
+.wrap .main03 .category li a {
+    color: #646060;
+    font-size: 25px;
+    line-height: 4;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 60px;
+    padding: 20px;
+}
+.wrap .main03 .category div {
+    display: inline-block;
+   
+}
+.wrap .main03 .category .list .item a img {
+    width:350px;
+    height: 377px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-right: 28px;
+}
+.wrap .main03 .category .item .text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+    font-weight: normal;
+}
+.wrap .main03 .category .item .text strong {
+    font-size: 25px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+}
+
+.wrap .survey {
+    width: 1484px;
+    margin: 0 auto;
+    margin-top: 295px;
+    position: relative;
+}
+.wrap .survey img {
+    width: 100%;
+    height: 440px;
+    opacity: 70%;
+    object-fit: cover;
+}
+.wrap .survey div {
+position: absolute;
+top: 67px;
+right: 126px;
+color: #fff;
+text-align: right;
+}
+.wrap .survey div p {
+    font-size: 24px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.wrap .survey div h4 {
+    font-size: 40px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    text-shadow: 4px 4px 5px #333;
+    margin-bottom: 150px;
+}
+.wrap .survey div ul li a {
+    font-size: 27px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    border: 3px solid #fff;
+    padding: 10px 35px;
+}
+
+.wrap .main05 {
+    width: 1484px;
+    margin: 0 auto;
+}
+.wrap .main05 h1 {
+    font-size: 48px;
+    font-family:'KBO-Dia-Gothic_bold';
+    font-weight: bold;
+    color: #6A1731;
+    text-align: center;
+    margin-top:150px;
+}
+.wrap .main05 div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 10px;
+}
+.wrap .main05 .icon a img {
+    width: 50px;
+    height: 50px;
+}
+
+.wrap .main05 .snscard ul {
+   display: flex;
+   justify-content: space-between;
+}
+.wrap .main05 .snscard ul li a img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 5px solid #6A1731;
+}
+
+.footer {
+    margin-top: 100px;
+    width: 1920px;
+    height: 500px;
+    background-color: #6A1731;
+    position: relative;
+    font-family:'Pretendard-Regular' ;
+    font-weight: bold;
+}
+
+.footer .email {
+    margin: 0 80px;
+    color: #fff;
+    font-size: 17px;
+    font-family:'Pretendard-Regular';
+    line-height: 1;
+    position: absolute;
+    top: 60px;
+}
+
+.footer .email .address {
+    margin-top: 25px;
+}
+.footer .email .address input {
+
+    width: 390px;
+    height: 46px;
+    border-radius: 15px;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.footer .email .address img {
+   position: absolute;
+    bottom: 3px;
+    right: 5px;
+}
+.footer .email h5 {
+    color: #fff;
+    position: absolute;
+    bottom: -250px;
+}
+
+.footer .email .lan a img:nth-child(1) {
+    width:45px ;
+    height: 45px;
+    position: absolute;
+    top: 200px;
+}
+.footer .email .lan a img:nth-child(2) {
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 209px;
+    margin-left: 50px;
+}
+.data {
+    color: #fff;
+    position: relative;
+}
+.data div {
+    position: absolute;
+    top: 60px;
+    left: 850px;
+}
+.data div ul li:first-child {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+}
+.data div ul li a:nth-child(5) {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-underline-offset: 30px;
+}
+.store {
+    color: #fff;
+    font-size: 23px;
+    position: relative;
+}
+.store div {
+    position: absolute;
+    top: 60px;
+    right: 150px;
+}
+.store div input {
+    width: 390px;
+    height: 46px;
+    border-radius: 50px;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.store div img {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+.store  h1 {
+    margin-bottom: 26px;
+    margin-left: 70px;
+}
+
+.footer_logo img {
+    width: 230px;
+    height: 125px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 45px;
+    right: 187px;
+}
