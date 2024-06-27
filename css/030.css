@@ -1,0 +1,61 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    text-align: center;
+}
+
+.shadow ul li {
+    width: 200px;
+    height: 200px;
+    background-color: #01A9E1;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    margin: 30px;
+}
+.shadow ul li:first-child {
+    box-shadow: 10px 40px 20px #0b33415d;
+    /* boe-shadow -> 그림자
+    x축 y축 블러 색상 */
+}
+.shadow ul li:nth-child(2) {
+    box-shadow: -10px -40px 20px #0b33415d ;
+}
+.shadow ul li:nth-child(3) {
+    box-shadow: 5px 5px 10px red,
+                10px 10px 10px orange,
+                20px 20px 10px blue,
+                -10px -10px 10px purple;
+}
+.shadow ul li:nth-child(4) {
+    box-shadow: inset 20px 40px 10px rgba(77, 67, 67, 0.568);
+}
+.shadow ul li:nth-child(5) {
+    box-shadow: 0 0 40px green;
+}
+a {
+    width: 120px;
+    height: 40px;
+    background-color: #01A9E1;
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #01A9E1;
+}

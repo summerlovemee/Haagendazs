@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+}
+
+.story {
+    width: 1440px;
+    margin: 150px auto;
+    background-color: antiquewhite;
+}
+
+.story h2 {
+    margin-bottom: 28px;
+    font-size: 48px;
+}
+
+.story .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap:40px ;
+    /* gap : 간격, 여백 설정
+    raw-gap : 세로 사이 간격 
+    column-gap : 가로 사이 간격
+    
+    display-flex 있을 때만 사용 가능*/
+}
+
+.story .list .item {
+    width: 705px;
+    display: flex;
+    justify-content: space-between;
+ /*  margin-bottom: 40px; */  
+}
+
+.story .list .item img {
+    width: 338px;
+    height: 338px;
+    object-fit: cover;
+}
+.story .list .item div {
+    width: 337px;
+}
+
+.story .list .item div strong {
+    font-weight: normal;
+}
+
+.story .list .item div h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    /* 20x1.3 => 26px(포토샵 작업 시) */
+    margin: 15px 0;
+}
+
+.story .list .item div p {
+    line-height: 24px;
+    margin-bottom: 16px;
+}

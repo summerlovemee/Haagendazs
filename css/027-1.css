@@ -1,0 +1,174 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h1::before {
+    content: '🌊';
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::after {
+    content: '🐳🐋';
+}
+
+h3 {
+    /*  text-align: center; */
+    margin: 40px 0;
+    position: relative;
+    display: inline-block;
+}
+
+h3::before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #00AEE5;
+    /* display: block; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    /* z-index 요소 앞뒤 위치 변경
+    position 이 있을 시 사용 가능 */
+}
+h3::after {
+    content: '✨';
+}
+.item {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.item::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    color: #fff;
+    display: none;
+}
+.item:hover div {
+    display: block;
+}
+.item:hover::before {
+    display: block;
+}
+
+
+.cont01 {
+    width: 1280px;
+    margin: 100px auto;
+}
+.cont01 .list {
+    display: flex;
+    justify-content: space-between;
+}
+.cont01 .list .box {
+    width: 410px;
+    height: 500px;
+    position: relative;
+}
+.cont01 .list .box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.cont01 .list .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont01 .list .box:hover::before {
+    opacity: 1;
+    transition: 1s;
+    bottom: 0;
+}
+.cont01 .list .box:hover div {
+    opacity: 1;
+    transition: 1s;
+}
+.cont01 .list .box div {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0;
+    color: #ffffff;
+}
+
+
+a {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #00AEE5;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    position: relative;
+    color: #6e6767;
+    }
+    a::before {
+        content: '';
+        width: 0;
+        height: 100%;
+        background-color: rgba(0, 247, 255, 0.438);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    a:hover::before {
+        width: 100%;
+        transition: 1s;
+    }
+    a:hover {
+        opacity: 1;
+    transition: 1s;
+    }

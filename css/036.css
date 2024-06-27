@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+}
+
+.header {
+    height: 100px;
+    border-bottom: 1px solid #333; 
+}
+.header .inner {
+    height: 100%;
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .inner .nav {
+    height: 100%;
+}
+.header .inner .nav .gnb {
+    display: flex;
+}
+.header .inner .nav .gnb > li .depth01 {
+    line-height: 100px;
+    padding: 0 30px;
+    display: block;
+}
+.header .inner .nav .gnb > li .depth02 {
+    border: 1px solid #333;
+    text-align: center;
+}
+.header .inner .nav .gnb > li .depth02 li {
+    padding: 15px 0;
+}
+
+.header .inner .search {
+    width: 200px ;
+    height: 50px ;
+    position: relative;
+}
+.header .inner .search input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    border-radius: 40px;
+    background-color: lemonchiffon;
+    padding: 0 10px;
+    box-sizing: border-box;
+    /* 테두리가 있다면 box-sizing: border-box 추가*/
+}
+.header .inner .search img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}

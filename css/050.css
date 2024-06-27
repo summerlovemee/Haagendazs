@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+    background-color: lavender;
+}
+h1::after {
+    content: ' : 데스크탑';
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        background-color: lemonchiffon;
+    }
+    h1::after {
+        content: ' : 태블릿';
+    }
+}
+
+/* 768  */
+@media screen and (max-width:768px) {
+    body {
+        background-color: skyblue;
+    }
+    h1::after {
+        content: ':태블릿세로/모바일가로';
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        background-color: greenyellow;
+    }
+    h1::after {
+        content: '모바일 세로';
+    }
+}
+
+/*  화면크기 최소 320px 스타일 적용 */

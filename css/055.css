@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+}
+
+h3 {
+    color: red !important;
+    /* !important : 우선순위가 됨 */
+}
+
+#tag {
+    color: blue
+}
+
+.box h3 {
+    color: blueviolet;
+}
+
+h2 {
+    color: aqua;
+}
+
+.tag {
+    color: beige;
+}
+
+h2.tag {
+    color: chartreuse;
+}
+
+/* 선택자 정수
+* => 0점
+태그 => 1점
+class => 10점
+id => 100점
+인라인 속성 => 1000점
+!important => 우선순위
+ */
+
+.box h3 {}
+
+.box p {}
+
+.box p.tag_p {}
+
+.box .tag_p {}
+
+.box p:nth-child(2) {
+    color: blue;
+}
+
+.box p:nth-of-type(2) {
+    color: darkorchid;
+    /* 다른 타입이랑 섞여있을 때 사용 */
+}
+
+.box p:first-of-type+p {
+    /* + 바로 뒤 선택자 */
+    color: hotpink;
+    font-weight: bold;
+}
+
+.box p:first-of-type~p {
+    /* ~ 모든 선택자 */
+    color: skyblue;
+    font-size: 20px;
+}
+
+.box h3,
+.box p,
+h2 {
+    font-size: 50px;
+}
+
+
+.list li:nth-child(odd) {
+    /* odd : 홀수 선택자
+    even : 짝수 선택자 */
+    background-color: skyblue;
+}
+
+.list li:nth-child(even) {
+    background-color: pink;
+}
+
+.list li:nth-child(3n) {
+    /* n : 배수 */
+    background-color: blueviolet;
+}
+:root {
+    --fontsize50 : 50px;
+    --buttonsize20 : 20px;
+    --buttoncolor : orange;
+}
+
+.box .tag_p3 {
+    width: 200px;
+    height: 40px;
+    font-size: var(--buttonsize20);
+    background-color: var(--buttoncolor);
+}
+
+/* 태그
+ 클래스명
+ 아이디명
+ ~
+ +
+ ,
+ :nth-child()
+ :nth-of-type()
+ var 변수
+ */
+
+ /* :nth-child() 
+ /:nth-child(odd) 
+  :nth-child(even) 
+  :nth-child(5n)
+ :nth-of-type()
+ :root */

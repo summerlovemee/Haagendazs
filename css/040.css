@@ -1,0 +1,70 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+
+}
+
+.box p {
+    width: 200px;
+    height: 50px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+   /*  text-align: center; */
+ /*    line-height: 50px; */
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.box p:first-child:hover {
+    width: 400px;
+    background-color: red;
+    transition: 0.7s;
+}
+
+.box p:nth-child(2):hover {
+    width: 400px;
+    background-color: blueviolet;
+    transition: background-color 1s;
+}
+
+.box p:nth-child(3):hover {
+    height: 100px;
+    background-color: darkseagreen;
+    transition: height 1s linear;
+    /* linear : 일정 속도(기본값)
+    ease-in : 점점 빨라짐
+    ease-in-out :시작과 끝이 느림
+    ease-out : 점점 느려짐 */
+}
+
+.box p:nth-child(4):hover {
+    width: 600px;
+    background-color: lemonchiffon;
+    transition: all 1s 2s;
+    /* 1s 2s
+       실행시간 지연시간 */
+}
+
+.box p:nth-child(5):hover {
+    height: 200px;
+    background-color: darkgrey;
+    transition: height 0.5s,
+                background-color 0.5s 1s linear ;
+}

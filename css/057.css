@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --basic-fontstyle : 'SUITE-Regular';
+    --btn-fontstyle : 'GongGothicMedium';
+    --color-red : #ff0000;
+    --color-white : #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    font-family: var(--basic-fontstyle);
+}
+fieldset {
+    border: 0;
+}
+legend {
+    position: absolute;
+    left: -999px;
+}
+
+#form {
+    max-width: 900px;
+    width: calc(100% - 30px);
+    border: 1px solid #333;
+    margin: 100px auto;
+    padding: 50px;
+    
+}
+#form .box {
+    border-bottom: 1px dotted #333;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+#form .box > label {
+    display: block;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #888;
+    padding: 0 10px;
+}
+ul {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+ul li input {
+    display: none;
+}
+ul li label {
+    padding: 0 20px;
+    padding-left: 40px;
+    height: 40px; 
+    background-color: #ccc;
+    display: inline-block;
+    line-height: 40px;
+    position: relative;
+}
+
+ul li input:checked + label {
+    background-color: var(--color-red);
+}
+ul li input + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons8-돌고래-32.png) left center / 100% no-repeat;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ul li input:checked + label::before {
+    background-image: url(../img/icons8-돌고래-32.png);
+}
+.btn {
+    text-align: center;
+}
+.btn input {
+    padding: 0 40px;
+    height: 40px;
+    border: 0;
+    font-family: var(--btn-fontstyle);
+}
+.btn input[type="reset"] {
+background-color: #eee;
+border:1px solid royalblue;
+}
+.btn input[type="submit"] {
+    background-color: royalblue;
+}
+
+input:focus {
+    outline: 2px solid teal;
+}
+input::placeholder {
+    font-size: 14px;
+    color:#ccc;
+}

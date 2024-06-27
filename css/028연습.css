@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    text-align: center;
+}
+.cont01 {
+    font-family: 'yg-jalnan';
+}
+.cont01 {
+    width: 1000px;
+    margin: 100px auto;
+}
+.cont01 h3 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.cont01 .list {
+    display: flex;
+    justify-content: space-between;
+}
+.cont01 .list .item {
+    width: 480px;
+    overflow: hidden;
+}
+.cont01 .list .item .image::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -100%;
+    left: 0;
+    transition: 0.7s;
+}
+.cont01 .list .item .image {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.cont01 .list .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont01 .list .item .image ul {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: 0.7s;
+}
+.cont01 .list .item .image ul li {
+    font-size: 22px;
+}
+.cont01 .list .item .image ul li:last-child {
+    margin-top: 20px;
+}
+.cont01 .list .item .text h4 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.3;
+}
+.cont01 .list .item .text p {
+    text-align: center;
+    margin-top: 10px;
+}
+.cont01 .list .item .image:hover::before {
+    content: '';
+    top: 0;
+}
+.cont01 .list .item:hover .image ul {
+    opacity: 1;
+}

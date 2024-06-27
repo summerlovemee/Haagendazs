@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon div {
+    width: 100px;
+    
+}
+.icon div figure {
+    width: 100%;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #999;
+  /*   text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon div figure img {
+    width: 60px;
+    /* 아이콘에는 object 값 사용 X */
+    transition: 0.7s;
+}
+.icon div p {
+    margin-top: 15px;
+    text-align: center;
+}
+.icon div:hover figure img {
+    transform: rotateY(360deg);
+}
+.icon div:hover p {
+    text-decoration: underline;
+    /* underline 밑줄
+    line-through 취소선 */
+}
+
+.box {
+    width: 500px;
+}
+.box figure {
+    width: 100%;
+    height: 500px;
+}
+.box figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .box figure img:nth-child(2) {
+    display: none;
+} */
+/* + -> 바로뒤에 있는 형제 선택자 */
+.box figure img + img {
+    display: none;
+}
+.box:hover figure img {
+    display: none;
+}
+.box:hover figure img + img {
+    display: block;
+}
+
+.box-02 {
+    width: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;   
+}
+.box-02 figure {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.box-02 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+
+}
+/* + -> 바로뒤에 있는 형제 선택자 */
+.box-02 figure img + img {
+    opacity: 0;
+}
+.box-02:hover figure img {
+   opacity: 0;
+   transform: rotateY(360deg);
+}
+.box-02:hover figure img + img {
+    opacity: 1;
+}
+
+.box03 {
+    width: 700px;
+    border: 1px solid #333;
+    margin: 50px auto;
+}
+.box03 figure {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.box03 figure img {
+    width: 100%;
+    height:100% ; 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+}
+
+.box03 figure img + img {
+    opacity: 0;
+}
+.box03 figure:hover img {
+    opacity: 0;
+    transform: rotateY(360deg);
+}
+.box03:hover figure img + img {
+    opacity: 1;
+}
+
+
+.box04 {
+    width: 700px;
+    border: 1px solid violet;
+    margin: 50px auto;
+}
+
+.box04 figure {
+    width: 100%;
+    height: 700px;
+    position: relative
+}
+
+.box04 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+}
+
+.box04 figure img + img {
+    opacity: 0;
+}
+.box04 figure:hover img {
+opacity: 0;
+transform: rotateY(360deg);
+}
+.box04 figure:hover img + img {
+    opacity: 1;
+}

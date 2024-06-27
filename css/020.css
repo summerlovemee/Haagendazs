@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    height: 2000px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #333;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* 컨텐츠 겹쳐진 위아래 위치 변경
+    기본값 0
+    숫자가 크면 위로 배치
+    - 사용 가능
+    position 이 있을 때만 사용 가능 */
+}
+
+.sk {
+    width: 1280px;
+    margin: 100px auto;
+}
+
+.sk h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.sk .sk_menu {
+    display: flex;
+}
+
+.sk .sk_menu li {
+    background-color: #f5f6f7;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+    border-radius: 30px;
+    margin-right: 15px
+}
+
+.sk .sk_menu li:first-child {
+    background-color: #f47726;
+    color: #fff;
+}
+
+.sk .sk_sub_menu {
+    display: flex;
+    margin-top: 30px;
+}
+
+.sk .sk_sub_menu li {
+    margin-right: 50px;
+    position: relative;
+}
+
+.sk .sk_sub_menu li::after {
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #ccc;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+}
+
+.sk .sk_sub_menu li:last-child::after {
+    display: none;
+}
+
+.sk .list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 자식 선택자 */
+.sk .list>.item {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sk .list>.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sk .list>.item .item_text {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    text-align: center;
+
+}
+
+.sk .list>.item .item_text h2 {
+    font-size: 40px;
+}
+
+.sk .list>.item .item_text p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.sk .list>.item .item_price {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+}
+
+.sk .list>.item .item_price ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.sk .list > .item:hover .item_price {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.sk .list .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sk .list .right .item {
+    width: 460px;
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+.sk .list .right .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sk .list .right .item .item_text {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    text-align: center;
+}
+
+.sk .list .right .item .item_text h2 {
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+.sk .list .right .item .item_price {
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: 0.7;
+}
+.sk .list .right .item .item_price ul {
+    background-color: #ffffffc5;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+    font-size: 15px;
+}
+
+.sk .list > .right .item:hover .item_price {
+    bottom: 0;
+    transition: 0.5s;
+}

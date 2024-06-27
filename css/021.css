@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    height: 2000px;
+}
+
+.position {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    margin: 100px auto;
+    position: relative;
+    /* relative는 본인이 기준이 되면서
+    위치 이동 가능
+    방향은 제외 가능
+     */
+}
+
+.position div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    /* position -> 원하는 곳에 배치
+    - absolute는 부모 또는 조상의 
+    position에 따라 위치변경
+    - 부모 또는 조상한테 무조건 position이 있어야 함.
+    없다면  position: relative 추가
+     - absolute 사용시 top 또는 bottom, 
+     left 또는 right 무조건 설정*/
+}
+
+.position div:nth-child(1) {
+    background-color: antiquewhite;
+   position: sticky;
+   left: 0;
+   top: 20px;
+   /*  sticky : 브라우저 상단에서
+   부모영역이 지나갈 때
+   sticky 값이 고정이 됨. */
+}
+
+.position div:nth-child(2) {
+    background-color: cadetblue;
+     position: absolute;
+   right: -100px;
+    top: 0;
+}
+
+.position div:nth-child(3) {
+    background-color: cornflowerblue;
+    position: absolute;
+    right: 0;
+     bottom: 0;
+}
+
+.position div:nth-child(4) {
+    background-color: coral;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+}
+
+.position div:nth-child(5) {
+    background-color: darkred;
+    position: fixed;
+    right: 0;
+     top: 0;
+     /* fixed : 고정
+     top 또는 bottom
+     left 또는 right 위치설정
+     브라우저를 기준으로 위치 잡힘 */
+}
+
+/* position:static
+position을 해제하고자 할 떄 사용
+-> 주로 반응형 홈페이지 제작 시 사용됨. */
+
+
+.main_visual {
+    height: 500px;
+    position: relative;
+}
+
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.main_visual div {
+    width: 1280px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: aliceblue;
+    /* absolute 사용할 때 translate값은
+    50%, -50% , 0 중에서만 사용하기 */
+    transform: translate(-50%, 0);
+    /* = transform: translateX(-50%) */
+}
